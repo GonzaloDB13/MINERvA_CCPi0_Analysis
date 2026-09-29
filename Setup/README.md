@@ -16,10 +16,11 @@ The following scripts configure the required software suite and provide an envir
 
 ## Workflow
 
+```mermaid
 flowchart LR
     A["Login to<br/>Fermilab"] -->|.profile| B["Initialize<br/>Environment"]
 
-    C["MAT"] --> D["MINERvA<br/>software suite"]
+    C["MAT"] --> D["MINERvA<br/>Software Suite"]
     E["MAT-MINERvA"] --> D
     F["UnfoldUtils"] --> D
 
@@ -27,3 +28,4 @@ flowchart LR
     D -->|compile_MAT_CCPi0.sh| G["Compiled<br/>Libraries"]
     G -->|.rootlogon_MAT.C| H["Configured<br/>ROOT Session"]
     H --> I["CCπ⁰ Analysis"]
+```

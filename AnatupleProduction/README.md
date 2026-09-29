@@ -37,9 +37,11 @@ Once the reco files are available on disk, anatuple production is performed usin
 
 The complete anatuple production workflow is summarized below:
 
+```mermaid
 flowchart LR
     A["Reco files<br/>Tape"] -->|samweb_options.sh| B["Reco files<br/>Disk"]
     B -->|submit_jobs.sh| C["Individual<br/>anatuples"]
     C -->|submit_merge.sh| D["Merged<br/>anatuple"]
     D -->|submit_audit.sh| E["Validated<br/>anatuple"]
     E --> F["CCπ⁰ Analysis"]
+```
