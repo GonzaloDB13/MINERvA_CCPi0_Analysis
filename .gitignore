@@ -1,0 +1,25 @@
+# macOS metadata
+.DS_Store
+**/.DS_Store
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+
+# Compiled C/C++ objects and libraries
+*.o
+*.so
+*.dylib
+
+# ROOT output files
+*.root
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*~
+
+# Core dumps
+core
+core.*
