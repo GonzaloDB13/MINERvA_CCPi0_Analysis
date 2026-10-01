@@ -43,7 +43,7 @@ Primary C++, Python, and Bash analysis software, including event selection, back
 
 ## Research outcome
 
-The following are the results of neutrino-induced CCπ⁰ production on lead and iron nuclear targets by this analysis, as function of the final-state muon transverse momentum. The full extent of my analysis can be seen in my [doctoral thesis](https://inspirehep.net/literature/2626020).
+The following are the results of neutrino-induced CCπ⁰ production on lead and iron nuclear targets by this analysis, as function of the final-state muon transverse momentum.
 
 <p align="center">
   <img src="results/DataMC_lead.png"
@@ -53,10 +53,23 @@ The following are the results of neutrino-induced CCπ⁰ production on lead and
        alt="CCPi0 cross-section measurement on iron"
        width="49%">
 </p>
-
 <p align="center">
   <em>CCπ⁰ cross-section measurements on lead (left) and iron (right).</em>
 </p>
+
+<p align="center">
+  <img src="results/DataFracErrors_lead.png"
+       alt="CCPi0 cross-section measurement on lead"
+       width="49%">
+  <img src="results/DataFracErrors_iron.png"
+       alt="CCPi0 cross-section measurement on iron"
+       width="49%">
+</p>
+<p align="center">
+  <em>Fractional uncertainties on the CCπ⁰ cross-section on lead (left) and iron (right).</em>
+</p>
+
+The full extent of my analysis can be seen in my [doctoral thesis](https://inspirehep.net/literature/2626020).
 
 
 ## Software Environment
