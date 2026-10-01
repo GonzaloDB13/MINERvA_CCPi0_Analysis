@@ -4,7 +4,7 @@ This repository contains C++, Python, and Bash software developed for my doctora
 
 This code supported the analysis of neutrino-induced charged-current single-neutral pion (CCπ⁰) production on lead and iron targets, completed as part of my [doctoral thesis](https://inspirehep.net/literature/2626020) in 2022.
 
-This project includes software for configuring the analysis environment, processing large experimental datasets using Fermilab's computing resources, and performing event-level analysis that concluded into a cross-section measurement.
+This project includes software for configuring the analysis environment, processing large experimental datasets using Fermilab's computing resources, and performing the event-level analysis leading to a cross-section measurement.
 
 
 ## Technical Highlights
@@ -17,7 +17,7 @@ This project demonstrates experience with:
 
 - Bash tools for configuring and automating analysis workflows.
 
-- Distributed and grid computing for processing large-scale experimental datasets.
+- Distributed and grid computing for processing large-scale experimental and Monte Carlo datasets.
 
 - Statistical and systematic uncertainty analysis using data-driven techniques.
 
@@ -39,6 +39,24 @@ Scripts for producing analysis-ready ROOT objects (*anatuples*) using Fermilab's
 ### `CCPi0_Macros/`
 
 Primary C++, Python, and Bash analysis software, including event selection, background estimation and suppression, unfolding, systematic uncertainties evaluation, and cross-section extraction.
+
+
+## Research outcome
+
+The following are the results of neutrino-induced CCπ⁰ production on lead and iron nuclear targets by this analysis, as function of the final-state muon transverse momentum. The full extent of my analysis can be seen in my [doctoral thesis](https://inspirehep.net/literature/2626020).
+
+<p align="center">
+  <img src="results/DataMC_lead.png"
+       alt="CCPi0 cross-section measurement on lead"
+       width="49%">
+  <img src="results/DataMC_iron.png"
+       alt="CCPi0 cross-section measurement on iron"
+       width="49%">
+</p>
+
+<p align="center">
+  <em>CCπ⁰ cross-section measurements on lead (left) and iron (right).</em>
+</p>
 
 
 ## Software Environment
