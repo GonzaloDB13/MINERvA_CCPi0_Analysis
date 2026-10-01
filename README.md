@@ -11,7 +11,7 @@ This project includes software for configuring the analysis environment, process
 
 This project demonstrates experience with:
 
-- C++ and Python development for scientific data processing and analysis.
+- C, C++ and Python development for scientific data processing and analysis.
 
 - Object-oriented software design.
 

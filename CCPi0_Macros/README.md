@@ -1,6 +1,6 @@
-# CCπ0 Macros
+# CCπ⁰ Macros
 
-This directory contains the core C++ and Phyton software developed to perform the cross-section analysis of neutrino-induced CCπ⁰ production events on lead and iron.
+This directory contains the core C, C++ and Python software developed to perform the cross-section analysis of neutrino-induced CCπ⁰ production events on lead and iron.
 
 The analysis is organized as a sequence of processing steps, including event selection, background studies and constraint, unfolding, efficiency correction, proton-on-target (POT) normalization, cross-section extraction, and comparison with alternative neutrino-interaction models.
 
