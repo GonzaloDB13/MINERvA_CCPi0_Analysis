@@ -1,49 +1,50 @@
-# MINERvA CCπ⁰ Analysis
+# MINERvA CCπ⁰ Cross-Section Analysis
 
-This repository contains C++, Python, and Bash software developed for my doctoral research with the MINERvA Collaboration at the University of Rochester and Fermi National Accelerator Laboratory (Fermilab).
+This repository contains the scientific software developed for my doctoral research with the MINERvA Collaboration at the University of Rochester and Fermi National Accelerator Laboratory (Fermilab).
 
-This code supported the analysis of neutrino-induced charged-current single-neutral pion (CCπ⁰) production on lead and iron targets, completed as part of my [doctoral thesis](https://inspirehep.net/literature/2626020) in 2022.
+The project studied neutrino-induced charged-current single-neutral-pion (CCπ⁰) production on lead and iron nuclear targets and was completed in 2022 as part of my doctoral thesis:
 
-This project includes software for configuring the analysis environment, processing large experimental datasets using Fermilab's computing resources, and performing the event-level analysis leading to a cross-section measurement.
+[Measurement of $\nu$CC1$\pi^0$ cross section on heavy nuclei in MINERvA](https://inspirehep.net/literature/2626020)
+
+The repository covers the analysis workflow from software environment configuration and distributed processing of experimental and Monte Carlo datasets to event selection,
+systematic uncertainty studies, detector unfolding, and cross-section extraction.
 
 
 ## Technical Highlights
 
 This project demonstrates experience with:
 
-- C, C++ and Python development for scientific data processing and analysis.
-
-- Object-oriented software design.
-
-- Bash tools for configuring and automating analysis workflows.
-
-- Distributed and grid computing for processing large-scale experimental and Monte Carlo datasets.
-
-- Statistical and systematic uncertainty analysis using data-driven techniques.
-
-- ROOT-based data analysis, including histogramming, numerical analysis, and data visualization.
-
-- End-to-end analysis workflows, from production of datasets to cross-section analysis of such datasets.
+- C++ and Python development for scientific data processing and analysis.
+- Object-oriented software design and class inheritance.
+- Bash scripting for scientific software configuration and workflow automation.
+- Distributed and grid computing for large-scale datasets.
+- Monte Carlo simulation.
+- Statistical analysis.
+- Systematic uncertainty propagation.
+- ROOT-based event processing, histogramming, analysis, and visualization.
+- End-to-end scientific workflows, from dataset production to cross-section measurement.
 
 
 ## Repository Structure
 
 ### `Setup/`
 
-Environment configuration and build for the MINERvA software suite needed to properly run the analysis on the Fermilab computing system.
+Environment configuration and build tools for the MINERvA software used to run the analysis on the Fermilab computing system.
 
 ### `AnatupleProduction/`
 
-Scripts for producing analysis-ready ROOT objects (*anatuples*) using Fermilab's distributed computing and data-storage infrastructure.
+Distributed data-production workflow for transforming reconstructed datasets into analysis-ready ROOT files.
 
 ### `CCPi0_Macros/`
 
-Primary C++, Python, and Bash analysis software, including event selection, background estimation and suppression, unfolding, systematic uncertainties evaluation, and cross-section extraction.
+Core C++, Bash and Python analysis software for event selection, background estimation and suppression, detector unfolding, systematic uncertainties propagation, and cross-section extraction.
 
 
-## Research outcome
+## Research Outcome
 
-The following are the results of neutrino-induced CCπ⁰ production on lead and iron nuclear targets by this analysis, as well as their associated systematic uncertainties, as function of the final-state muon transverse momentum.
+The analysis measured neutrino-induced CCπ⁰ production on lead and iron nuclear targets.
+
+The figures below show the measured differential cross sections as a function of the final-state muon transverse momentum and their associated systematic uncertainties.
 
 <p align="center">
   <img src="results/DataMC_lead.png"
@@ -69,16 +70,16 @@ The following are the results of neutrino-induced CCπ⁰ production on lead and
   <em>Fractional systematic uncertainties on the CCπ⁰ cross-section on lead (left) and iron (right).</em>
 </p>
 
-The full extent of my analysis can be seen in my [doctoral thesis](https://inspirehep.net/literature/2626020).
+The complete analysis, physics motivation, methodology, and results are documented in my [doctoral thesis](https://inspirehep.net/literature/2626020).
 
 
-## Software Environment
+## Historical Software Environment
 
-The analysis was originally developed using the [MINERvA Experiment software](https://github.com/MinervaExpt) ecosystem, including:
+This analysis was developed within the [MINERvA Experiment software](https://github.com/MinervaExpt) ecosystem:
 
 - [MAT](https://github.com/MinervaExpt/MAT)
 - [MAT-MINERvA](https://github.com/MinervaExpt/MAT-MINERvA)
 - [UnfoldUtils](https://github.com/MinervaExpt/UnfoldUtils)
 - [GENIEXSecExtract](https://github.com/MinervaExpt/GENIEXSecExtract)
 
-This repository preserves the software in the context of the historical MINERvA software environment in which the analysis was developed. This is intended as a record of the analysis software.
+The repository preserves the research software in the historical Fermilab/MINERvA computing environment in which the analysis was performed. It is intended as a record of the analysis implementation and scientific-computing methodology rather than as a standalone modern software package.

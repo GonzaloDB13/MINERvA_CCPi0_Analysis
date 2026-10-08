@@ -1,15 +1,42 @@
 # Setup
 
-This directory contains the environment setup and maintenance scripts used to configure on the Fermilab computing system the MINERvA CCπ⁰ analysis in lead and iron.
+This directory contains the Bash and ROOT configuration scripts used to initialize, maintain, and build the software environment for the **MINERvA CCπ⁰ analysis on lead and iron** on the Fermilab computing systems.
 
-The scripts initialize the required MINERvA software suite and configure the environment for building and running the analysis.
+The analysis depended on several components of the MINERvA software stack, including [MAT](https://github.com/MinervaExpt/MAT), [MAT-MINERvA](https://github.com/MinervaExpt/MAT-MINERvA), [UnfoldUtils](https://github.com/MinervaExpt/UnfoldUtils), [ROOT](https://root.cern/), and specific software distributed through Fermilab infrastructure.
 
-- `.profile` – Configures the analysis environment automatically when logging into a Fermilab virtual machine.
+These scripts provided a consistent environment for compiling and running the analysis software.
 
-- `set_MAT_CCPi0.sh` – Initializes the software environment required by the analysis, including [MAT](https://github.com/MinervaExpt/MAT), [MAT-MINERvA](https://github.com/MinervaExpt/MAT-MINERvA), and [UnfoldUtils](https://github.com/MinervaExpt/UnfoldUtils).
 
-- `update_MAT_CCPi0.sh` – Updates the MINERvA software dependencies used by the analysis.
+## Environment Configuration
 
-- `compile_MAT_CCPi0.sh` – Builds the required MINERvA software packages after initialization or in case of dependency updates.
+- **`.profile`** – Configures the analysis environment when logging into the Fermilab computing system.
 
-- `.rootlogon_MAT.C` – Configures the ROOT session used by the analysis, including specific libraries and settings for visualization.
+- **`set_MAT_CCPi0.sh`** – Initializes the analysis by defining environment variables and loading the required MINERvA software stack, ROOT, and other dependencies.
+
+- **`.rootlogon_MAT.C`** – Configures ROOT for the analysis by setting paths, loading the required shared libraries, and applying analysis-specific configuration.
+
+
+## Dependency Management and Build
+
+- **`update_MAT_CCPi0.sh`** – Updates the source repositories used by the analysis environment.
+
+- **`compile_MAT_CCPi0.sh`** – Builds and installs the C++ software dependencies required by the analysis after initialization or source updates.
+
+
+## Technical Highlights
+
+This directory demonstrates experience with:
+
+- Scientific software.
+- Bash scripting and Linux/UNIX environments.
+- C++ build and runtime configuration.
+- ROOT framework configuration.
+- Environment variables and dependency management.
+- Dynamic library loading.
+
+
+## Historical Disclaimer
+
+This software was developed within the MINERvA experiment software ecosystem and depends on the historical Fermilab computing environment in which the analysis was performed.
+
+The repository preserves the original research software and therefore contains experiment-specific dependencies, filesystem locations, storage systems, dataset definitions, grid services, and paths from that environment. It is intended as a record of the analysis implementation and scientific-computing methodology rather than as a standalone modern software package.
